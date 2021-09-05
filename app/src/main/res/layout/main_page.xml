@@ -10,8 +10,7 @@
         android:layout_height="250sp"
         android:gravity="bottom"
         android:orientation="vertical"
-        android:background="@drawable/lebnsmittel"
-        >
+        android:background="@drawable/lebnsmittel">
 
         <TextView
             android:layout_width="match_parent"
@@ -20,16 +19,13 @@
             android:textColor="@color/white"
             android:textSize="30sp"
             android:padding="20sp"
-            android:background="#65000000"
-            />
+            android:background="#65000000" />
 
         <androidx.appcompat.widget.SearchView
             android:layout_width="match_parent"
             android:layout_height="60sp"
             app:queryHint="Search something"
-            android:padding="20sp"
-            />
-
+            android:padding="20sp" />
 
 
     </LinearLayout>
