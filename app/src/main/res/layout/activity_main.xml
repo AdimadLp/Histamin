@@ -1,22 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
-    <ListView
-        android:id="@+id/lv_listView"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="250sp"
+        android:background="@drawable/lebensmittel"
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true"
+        android:foregroundTint="#4A000000"
+        android:gravity="bottom"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_emptyTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="No Results"
-        android:textSize="20sp"
-        android:visibility="gone" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:paddingLeft="20sp"
+            android:paddingTop="20sp"
+            android:paddingRight="20sp"
+            android:text="@string/activity_main_text"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
 
-</android.widget.RelativeLayout>
+        <SearchView
+            android:id="@+id/nav_search"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_margin="20sp"
+            android:background="#FFFFFF"
+            android:iconifiedByDefault="false"
+            android:padding="5sp"
+            android:queryHint="@string/activity_main_listview"
+            app:showAsAction="ifRoom|withText" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lv_ListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_EmptyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/activity_main_listview_noresults"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+</LinearLayout>

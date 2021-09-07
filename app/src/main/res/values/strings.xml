@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name" translatable="false">Histamin</string>
+    <string name="activity_main_text">Nach histaminarmen Produkten suchen:</string>
+    <string name="activity_main_listview">In Histaminnavigator suchen</string>
+    <string name="activity_main_listview_noresults">Keine Ergebnisse</string>
 
     <string-array name="countries_array">
         <item>Agavendicksaft</item>
